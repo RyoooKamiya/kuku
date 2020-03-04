@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>九九</title>
+</head>
+
+<body>
+
+    <form name="frm">
+    <p>列数<input type="text" name="column" size="10"></p>
+    <p>行数<input type="text" name="line" size="10"></p>
+    <p>列開始数<input type="text" name="colstart" size="10"></p>
+    <p>行開始数<input type="text" name="listart" size="10"></p>
+    <input type="submit" id="btn" value="表示">
+    </form>
+
+    <script type="text/javascript">
+
+        document.getElementById("btn").onclick = function(){
+            var column = document.frm.column.value;
+            var line = document.frm.line.value;
+            var colstart = document.frm.colstart.value;
+            var listart = document.frm.listart.value;
+
+            document.write("<table border>");
+
+                for(var i = listart ; i <= line ; i++) {
+                    document.write("<tr>");
+
+                    for(var j = colstart ; j <= column ; j++) {
+                        var ij = i*j 
+                        if(ij%5==0){
+                            document.write("<td style='color:red'>",  ij  , "</td>");
+                        }else{
+                            document.write("<td>",  ij  , "</td>");
+                        }
+                    }
+                
+                    document.write("</tr>");
+                }
+
+            document.write("</table>");
+        }
+    
+    </script>
+
+</body>
+</html>
