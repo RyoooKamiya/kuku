@@ -51,14 +51,9 @@ function hogehoge(){
     document.write("</table>");
 }
 function fugafuga(){
-    var column = document.frm.column.value;
-    var line = document.frm.line.value;
-    var colstart = document.frm.colstart.value;
-    var listart = document.frm.listart.value;
     var tbl = document.getElementById('tbl');
-    for (var x = 0; x < line; x++) {
-        for (var y = 0; y < column; y++) {
-            // tbl.rows[x].cells[y].style.backgroundColor = "white";
+    for (var x = 0; x < tbl; x++) {
+        for (var y = 0; y < tbl.cells.length; y++) {
             var push = tbl.rows[x].cells[y];
             push.onclick = function() {
                 this.style.backgroundColor = 'blue';
