@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>九九</title>
+    <script type="text/javascript" src = "kuku.js"></script>
+</head>
+<body>
+    <form id="frm">
+        <p>列数<input type="text" id="column" size="10" value="9"></p>
+        <p>行数<input type="text" id="line" size="10" value="9"></p>
+        <p>列開始数<input type="text" id="colstart" size="10" value="1"></p>
+        <p>行開始数<input type="text" id="listart" size="10" value="1"></p>
+    </form>
+    <input type="submit" id="btn" value="表示" onclick="hogehoge();">
+    <div id="table"></div>
+</body>
+</html> -->
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TEST</title>
+  <script type="text/javascript" src="kuku.js"></script>
+</head>
+<body>
+    <form id="frm">
+        <p>左上から</p>
+        <p>列開始数（横へ）<input type="text" id="colstart" size="10" value="1"></p>
+        <p>行開始数（縦へ）<input type="text" id="listart" size="10" value="1"></p>
+        <p>列終了数（横）<input type="text" id="column" size="10" value="9"></p>
+        <p>行終了数（縦）<input type="text" id="line" size="10" value="9"></p>
+    </form>
+    <input type="button" id="btn" value="表示" onclick="printKukuTable();">
+    <div id="table"></div>      
+</body>
+</html>
